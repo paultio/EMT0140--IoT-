@@ -1,7 +1,6 @@
 // Includes global variables and librarys that the DHT uses
 #include <Arduino.h>
 #include <ittiot.h>
-#include <Ticker.h>
 #include <ESP8266WiFi.h>
 #include <Adafruit_I2CDevice.h>
 #include <Adafruit_GFX.h>
@@ -9,11 +8,7 @@
  
 #define OLED_RESET 0  // GPIO0
  
-Ticker timeTicker;
 Adafruit_SSD1306 display(OLED_RESET); // Create an object for OLED screen
- 
-bool isBootModeNormal;
-bool sendDataFlag;
  
 int i = 0; // Counter variable is defined
  
